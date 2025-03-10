@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="22.854" tests="3" skipped="0" failures="0" errors="0">
+<testcase classname="Validate the register functionality" name="validate the register functionality with valid details" time="17.124">
+<system-out><![CDATA[
+And chooses the country it navigates to login page..........................passed
+Given user enters the valid day "08" month "09" and year "1993".............passed
+Then the page navigates to the registerpage.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate the login functionality" name="Validate Login Functionality with valid credentials" time="16.849">
+<system-out><![CDATA[
+And chooses the country it navigates to login page..........................passed
+Given user is in login page.................................................passed
+When user enters the valid username "testrail@yopmail.com" and password "Test@123".passed
+Then it navigates to product page...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="create user functionality" name="Register a new user successfully - Example #1.1" time="22.691">
+<system-out><![CDATA[
+And chooses the country it navigates to login page..........................passed
+Given user enters the valid day "08" month "09" and year "1993".............passed
+Then the user enter the register details....................................passed
+]]></system-out>
+</testcase>
+</testsuite>

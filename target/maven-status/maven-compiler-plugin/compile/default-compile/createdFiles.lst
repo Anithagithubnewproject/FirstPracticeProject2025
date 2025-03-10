@@ -1,0 +1,6 @@
+com\qa\pages\LoginPage.class
+com\qa\utils\ConfigReader.class
+com\qa\utils\ElementUtils.class
+com\qa\factory\DriverFactory.class
+com\qa\pages\CreateUserPage.class
+com\qa\pages\RegisterPage.class

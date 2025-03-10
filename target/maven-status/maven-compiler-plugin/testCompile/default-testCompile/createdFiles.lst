@@ -1,0 +1,4 @@
+com\qa\runners\TestRunner.class
+com\qa\stepDefinitions\LoginPageStepDef.class
+com\qa\stepDefinitions\AppHooks.class
+com\qa\stepDefinitions\RegisterPageSteps.class
