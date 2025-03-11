@@ -20,7 +20,7 @@ import io.cucumber.testng.CucumberOptions;
 public class TestRunner extends AbstractTestNGCucumberTests {
 
     @Override
-    @DataProvider(parallel =true)  // Set to false to disable parallel execution
+    @DataProvider(parallel =false)  // Set to false to disable parallel execution
     public Object[][] scenarios() {
         return super.scenarios();
     }
