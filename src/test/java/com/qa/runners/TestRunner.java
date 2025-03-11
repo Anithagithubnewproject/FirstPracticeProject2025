@@ -12,7 +12,7 @@ import io.cucumber.testng.CucumberOptions;
         "pretty",
         "html:target/cucumber-reports.html",
         "json:target/cucumber.json",
-        "junit:target/cucumber.xml"
+        "junit:target/cucumber.xml" 
     },
     monochrome = true
 )
@@ -20,7 +20,7 @@ import io.cucumber.testng.CucumberOptions;
 public class TestRunner extends AbstractTestNGCucumberTests {
 
     @Override
-    @DataProvider(parallel =true)  
+    @DataProvider(parallel =true)  //data provider 
     public Object[][] scenarios() {
         return super.scenarios();
     }
