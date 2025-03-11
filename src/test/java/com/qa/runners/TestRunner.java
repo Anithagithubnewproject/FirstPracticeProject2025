@@ -7,7 +7,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
     features = "src/test/resources/features",
-    glue = "com.qa.stepDefinitions",  // Ensure this matches your actual package
+    glue = "com.qa.stepDefinitions",  
     plugin = {
         "pretty",
         "html:target/cucumber-reports.html",
@@ -20,7 +20,7 @@ import io.cucumber.testng.CucumberOptions;
 public class TestRunner extends AbstractTestNGCucumberTests {
 
     @Override
-    @DataProvider(parallel =true)  // Set to false to disable parallel execution
+    @DataProvider(parallel =true)  
     public Object[][] scenarios() {
         return super.scenarios();
     }
