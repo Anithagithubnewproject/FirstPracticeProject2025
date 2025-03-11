@@ -7,12 +7,12 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
     features = "src/test/resources/features",
-    glue = "com.qa.stepDefinitions",  // Ensure this matches your actual package
+    glue = "com.qa.stepDefinitions",  
     plugin = {
         "pretty",
         "html:target/cucumber-reports.html",
         "json:target/cucumber.json",
-        "junit:target/cucumber.xml"
+        "junit:target/cucumber.xml" 
     },
     monochrome = true
 )
@@ -20,8 +20,10 @@ import io.cucumber.testng.CucumberOptions;
 public class TestRunner extends AbstractTestNGCucumberTests {
 
     @Override
+
     @DataProvider(parallel =false)  // Set to false to disable parallel execution
-    public Object[][] scenarios() {
+
+        public Object[][] scenarios() {
         return super.scenarios();
     }
 }
