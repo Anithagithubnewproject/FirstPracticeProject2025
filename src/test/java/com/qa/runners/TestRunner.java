@@ -21,7 +21,7 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 
     @Override
 
-    @DataProvider(parallel =false)  // Set to false to disable parallel execution
+    @DataProvider(parallel = true)  // Set to false to disable parallel execution
 
         public Object[][] scenarios() {
         return super.scenarios();
