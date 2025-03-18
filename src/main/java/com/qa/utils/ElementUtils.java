@@ -62,9 +62,12 @@ public class ElementUtils {
 			String text = e.getText();
 			if (!text.isEmpty()) {
 				addedlist.add(text);
+				
 			}
 		}
+		System.out.println(addedlist);
 		return addedlist;
+		
 
 	}
 
