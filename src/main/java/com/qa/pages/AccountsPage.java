@@ -9,7 +9,7 @@ public class AccountsPage {
 	
 	private ElementUtils utils;
 	
-	//locator added
+	//locator added newly
 	
 	By headerlist = By.xpath("//h2[contains(text(),'Account')]/..//ul/li/a/h3");
 	
