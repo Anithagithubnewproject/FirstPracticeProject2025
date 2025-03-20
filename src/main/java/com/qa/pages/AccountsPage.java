@@ -18,6 +18,7 @@ public class AccountsPage {
 		
 	}
 	
+	//page title
 	public String pageTitle() {
 		return utils.getPageTitle();
 	}
