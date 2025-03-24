@@ -82,21 +82,18 @@
 
       <!-- Surefire Plugin (Runs TestNG & Cucumber) -->
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>2.22.2</version>
-        <configuration>
-          <includes>
-            <include>**/*Test.java</include>
-          </includes>
-          <systemPropertyVariables>
-            <property>
-              <name>cucumber.options</name>
-              <value>--plugin pretty --plugin html:target/cucumber-reports.html --plugin json:target/cucumber-reports/cucumber.json --plugin junit:target/cucumber-reports/cucumber.xml --glue com.qa.stepDefinitions --features src/test/resources/features</value>
-            </property>
-          </systemPropertyVariables>
-        </configuration>
-      </plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <version>3.0.0-M7</version>
+    <configuration>
+        <suiteXmlFiles>
+            <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+        </suiteXmlFiles>
+        <systemPropertyVariables>
+            <cucumber.options>--plugin pretty --plugin html:target/cucumber-reports.html --plugin json:target/cucumber-reports/cucumber.json --plugin junit:target/cucumber-reports/cucumber.xml --glue com.qa.stepDefinitions --features src/test/resources/features</cucumber.options>
+        </systemPropertyVariables>
+    </configuration>
+</plugin>
     </plugins>
   </build>
 
