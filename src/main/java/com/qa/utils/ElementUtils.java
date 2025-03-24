@@ -71,6 +71,9 @@ public class ElementUtils {
 
 	}
 
+	public void reFreshPage() {
+		driver.navigate().refresh();
+	}
 	
 	public void selectListOfElements(By locator) {
 		Select sc = new Select(getElement(locator));

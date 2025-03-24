@@ -13,13 +13,24 @@ public class AccountPageSteps {
 	
 	
 		
-	@Then("the user checks the accout headers and clicks the store lookup")
-	public void the_user_checks_the_accout_headers_and_clicks_the_store_lookup() {
+	@Then("the user checks the menu bar")
+	public void the_user_checks_the_menu_bar() {
 		String title=acp.pageTitle();
 		System.out.println(title);
 		acp.getHeadersList();
 		acp.getMenuDetails();
-		Assert.assertEquals(title,"Register A New Account | Claire's US");
+		Assert.assertEquals(title,"Claire's Rewards Dashboard | C.CLUB | Claire's US");
+	    
+	}
+
+	@Then("the user clicks the shopnow")
+	public void the_user_clicks_the_shopnow() throws InterruptedException 
+	{
+		acp.clickShopNow();
+		String title=acp.pageTitle();
+		System.out.println(title);
+		
+	
 	    
 	}
 
