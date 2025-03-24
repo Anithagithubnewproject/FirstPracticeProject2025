@@ -12,6 +12,9 @@ public class AccountsPage {
 	//locator added newly
 	
 	By headerlist = By.xpath("//h2[contains(text(),'Account')]/..//ul/li/a/h3");
+	//By closebar=By.xpath("(//button//span[@class='ui-button-icon ui-icon ui-icon-closethick'])[1]");
+	//By addressbar =By.xpath("//a[@class='nearest-store-name']");
+	By menubar =By.xpath("//ul[@class='menu-category level-1']/li/a/span");
 	
 	public AccountsPage(WebDriver driver){
 		this.utils=new ElementUtils(driver);
@@ -25,6 +28,10 @@ public class AccountsPage {
 	
 	public void getHeadersList() {
 		utils.getListofElements(headerlist);
+	}
+	public void getMenuDetails() {
+		utils.getListofElements(menubar);
+		//utils.doClick(addressbar);
 	}
 	
 	

@@ -10,7 +10,7 @@ Scenario Outline: Register a new user successfully
         
 Examples:
        | firstname | lastname | email                     | country | postcode | mobile     | password  | confirmpassword |
-       | Krithik   | krish    | krithkkrish@yopmail.com   | United States | 90001    | 212 555 4567  | Test@123  | Test@123         |
+       | Krit   | kr    | fe@yopmail.com   | United States | 90001    | 212 555 4567  | Test@123  | Test@123         |
        
        
         
