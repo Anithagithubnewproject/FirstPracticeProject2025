@@ -6,11 +6,12 @@ Scenario Outline: Register a new user successfully
         Then the user enter the register details
         | firstname | lastname | email| country | postcode | mobile     | password  | confirmpassword |
        | <firstname> | <lastname> | <email>| <country> | <postcode> | <mobile>   | <password> | <confirmpassword> |
-       Then the user checks the accout headers and clicks the store lookup 
+       Then the user checks the menu bar
+       Then the user clicks the shopnow
        
          
         
 Examples:
        | firstname | lastname | email                     | country | postcode | mobile     | password  | confirmpassword |
-       | My   | My    |ff@yopmail.com   | United States | 90001    | 222 555 4567  | Test@123  | Test@123         |
+       | My   | Meera    |nena@yopmail.com   | United States | 90001    | 222 555 4567  | Test@123  | Test@123         |
        
